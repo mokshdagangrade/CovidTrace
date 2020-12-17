@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/background_light"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!--Text view to display City name-->
+                <TextView
+                    android:id="@+id/state"
+                    android:layout_width="210dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="State Name"
+                    android:textColor="@color/teal_700"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <!--Text view to display Active Cases-->
+                    <TextView
+                        android:layout_width="107dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:text="Active- "
+                        android:textColor="@color/purple_700"
+                        android:textStyle="bold" />
+
+                    <!--Text view to display Active Cases in Numbers-->
+                    <TextView
+                        android:id="@+id/active"
+                        android:layout_width="72dp"
+                        android:layout_height="wrap_content"
+                        android:text="2323223 "
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textStyle="bold" />
+
+                    <!--Image view to display increase in Cases -->
+                    <ImageView
+                        android:layout_width="17dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_baseline_arrow_upward_24" />
+
+                    <!--Text view to display Todays Active Cases in Numbers-->
+                    <TextView
+                        android:id="@+id/incactive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:text="32"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <!--Text view to display Cured Cases -->
+                    <TextView
+                        android:layout_width="107dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:text="Cured- "
+                        android:textColor="@color/purple_700"
+                        android:textStyle="bold" />
+
+                    <!--Text view to display Total Cured Cases in Numbers -->
+                    <TextView
+                        android:id="@+id/cured"
+                        android:layout_width="72dp"
+                        android:layout_height="wrap_content"
+                        android:text="2323223 "
+                        android:textColor="@android:color/holo_green_light"
+                        android:textStyle="bold" />
+
+                    <!--Image view to display increase in Cases -->
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_baseline_arrow_upward_24" />
+
+                    <!--Text view to display Todays Cured Cases in Numbers -->
+                    <TextView
+                        android:id="@+id/inccured"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:text="32"
+                        android:textColor="@android:color/holo_green_light"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <!--Text view to display deths Cases -->
+                    <TextView
+                        android:layout_width="107dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:text="Death- "
+                        android:textColor="@color/purple_700"
+                        android:textStyle="bold" />
+
+                    <!--Text view to display total death Cases in Numbers -->
+                    <TextView
+                        android:id="@+id/death"
+                        android:layout_width="72dp"
+                        android:layout_height="wrap_content"
+                        android:text="2323223 "
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <!--Image view to display increase in Cases -->
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_baseline_arrow_upward_24" />
+
+                    <!--Text view to display todays death Cases in Numbers -->
+                    <TextView
+                        android:id="@+id/incdeath"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="32"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <!--Text view to display total Number of cases Cases  -->
+                    <TextView
+                        android:layout_width="107dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:text="Total- "
+                        android:textColor="@color/purple_700"
+                        android:textStyle="bold" />
+
+                    <!--Text view to display total Number of cases Cases in Numbers -->
+                    <TextView
+                        android:id="@+id/total"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2323223 "
+                        android:textColor="@android:color/holo_blue_bright"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="391dp"
+        android:layout_height="6dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="113dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/darker_gray"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>
